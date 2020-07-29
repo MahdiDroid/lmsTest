@@ -1,6 +1,5 @@
 package com.ludus.lms.entity;
 
-<<<<<<< HEAD
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
