@@ -15,7 +15,7 @@ public class SubCourse {
     private IntroVideo introVideo;
     private LectureVideo lectureVideo;
     private List<ExpertVideo> expertVideos;
-    private List<Reading> readings;
+    private List<ExternalReading> externalReadings;
 
     public int getId() {
         return id;
@@ -57,11 +57,11 @@ public class SubCourse {
         this.expertVideos = expertVideos;
     }
 
-    public Reading getReadings() {
-        return readings;
+    public List<ExternalReading> getExternalReadings() {
+        return externalReadings;
     }
 
-    public void setReadings(Reading reading) {
-        this.readings = reading;
+    public void setExternalReadings(List<ExternalReading> externalReadings) {
+        this.externalReadings = externalReadings;
     }
 }
