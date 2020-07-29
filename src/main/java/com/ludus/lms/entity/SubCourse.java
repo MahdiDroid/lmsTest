@@ -1,10 +1,11 @@
 package com.ludus.lms.entity;
 
-import com.ludus.lms.entity.Course;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import java.util.List;
+
 @Entity
 public class SubCourse {
     @Id
@@ -13,8 +14,8 @@ public class SubCourse {
     private Course course;
     private IntroVideo introVideo;
     private LectureVideo lectureVideo;
-    private ExpertVideo expertVideo;
-    private Reading reading;
+    private List<ExpertVideo> expertVideos;
+    private List<Reading> readings;
 
     public int getId() {
         return id;
@@ -48,19 +49,19 @@ public class SubCourse {
         this.lectureVideo = lectureVideo;
     }
 
-    public ExpertVideo getExpertVideo() {
-        return expertVideo;
+    public List<ExpertVideo> getExpertVideos() {
+        return expertVideos;
     }
 
-    public void setExpertVideo(ExpertVideo expertVideo) {
-        this.expertVideo = expertVideo;
+    public void setExpertVideos(List<ExpertVideo> expertVideos) {
+        this.expertVideos = expertVideos;
     }
 
-    public Reading getReading() {
-        return reading;
+    public Reading getReadings() {
+        return readings;
     }
 
-    public void setReading(Reading reading) {
-        this.reading = reading;
+    public void setReadings(Reading reading) {
+        this.readings = reading;
     }
 }
